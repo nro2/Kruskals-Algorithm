@@ -7,7 +7,6 @@ class Graph():
         self.V = 0
         self.graph = defaultdict(list)
 
-
     def addEdge(self, src, dest, weight):
 
         if src not in self.verticies:
@@ -16,7 +15,6 @@ class Graph():
 
         newNode = [dest, weight]
         self.graph[src].insert(0, newNode)
-
 
 
 def readinFile(aGraph, file):
