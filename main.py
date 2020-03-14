@@ -30,7 +30,6 @@ def union(vertex1, vertex2):
 
     if vertices[index1].root == vertices[index2].root:        # X and Y are in the same set, returning without adding
         return 0
-
     if vertices[index1].rank < vertices[index2].rank:         # X and Y are not in the same set, merge them
         vertices[index1].root = vertices[index2].root
         return 1
@@ -43,7 +42,6 @@ def union(vertex1, vertex2):
         return 1
 
 def kruskal(V, G):
-
 
     MST = []
     keys = list(G.keys())
@@ -70,7 +68,6 @@ def kruskal(V, G):
 
     print("Total Weight: ", weight)
     return MST
-
 
 myGraph = Graph()
 readinFile(myGraph, "city-pairs.txt")
